@@ -33,10 +33,9 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR}/lib)
 
 OPTION(BUILD_TESTS "Build tests" ON)
-OPTION(BUILD_SHARED_LIBS "Build shared libraries" OFF)
-OPTION(BUILD_PYTHON "Build Python extension" OFF)
+OPTION(BUILD_SHARED_LIBS "Build shared libraries" ON)
 OPTION(BUILD_POSITION_INDEPENDENT_CODE "Build position independent code (-fPIC)" ON)
-OPTION(INSTALL_OPENGV "Install OpenGV on the system" OFF)
+OPTION(INSTALL_OPENGV "Install OpenGV on the system" ON)
 
 add_definitions (-Wall -march=native -O3) #TODO use correct c++11 def once everybody has moved to gcc 4.7 # for now I even removed std=gnu++0x
 
